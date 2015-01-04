@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial 20 - POO</title>
+	<script>
+		var uno = prompt("primer número");
+		var dos = prompt("segundo número");
+		function Calculadora()
+		{
+			this.multiplicacion = function(val1,val2){
+				return (val1*val2);
+			}
+		}
+
+		var calc = new Calculadora();
+		alert("El resultado es "+calc.multiplicacion(uno,dos));
+		
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

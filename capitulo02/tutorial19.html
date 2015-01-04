@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial 19 - Login básico</title>
+	<script>
+		var registro = prompt("No estás registrado, por favor registra tu nueva password");
+
+		function exito()
+		{
+			document.write("EXITO! Estás en el área de registrados");
+		}
+		function fallo()
+		{
+			document.write("PASSWORD no registrado");
+		}
+		if(registro == "")
+		{
+			alert("Por favor, escribe algo");
+		}
+		else
+		{
+			var user = prompt("Te has registrado con la password "+registro+", haz login:");
+			if(user == registro)
+			{
+				exito();
+			}
+			else
+			{
+				fallo();
+			}
+
+		}
+		
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
